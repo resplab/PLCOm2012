@@ -35,6 +35,12 @@ plcom2012 <-
            smoking_intensity,
            duration_smoking,
            smoking_quit_time) {
+
+    %notin% <- Negate(%in%)
+    if (race %notin% c('White', 'American Indian', 'Alaskan Native', 'Black', 'Hispanic', 'Asian', 'Native Hawaiian', 'Pacific Islander')) {
+      stop('Your input data for race should be coming from White, American Indian, Alaskan Native, Black, Hispanic, Asian, Native Hawaiian, Pacific Islander.')
+    }
+
     if (race == 'White' |
         race == 'American Indian' | race == 'Alaskan Native') {
       model <-
