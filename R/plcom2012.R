@@ -15,7 +15,7 @@
 #' @param duration_smoking a vector of patient's duration of smoking, per 1-yr increase
 #' @param smoking_quit_time a vector of patient's smoking quit time, per 1-yr increase
 #'
-#' @return prob patient’s 6-year probability of lung-cancer
+#' @return prob patient's 6-year probability of lung-cancer
 #' @export
 #'
 #' @examples
@@ -68,7 +68,25 @@ plcom2012 <-
       stop('Your input data for personal history of cancer should be either 1 or 0. 1 as yes and 0 as no.')
     }
 
-    #Eric's tests...
+    if (family_hist_lung_cancer %notin% c(1, 0)) {
+      stop('Your input data for family history of lung cancer should be either 1 or 0. 1 as yes and 0 as no.')
+    }
+
+    if (smoking_status %notin% c(1, 0)) {
+      stop('Your input data for smoking status should be either 1 or 0. 1 as current and 0 as former.')
+    }
+
+    if (smoking_intensity < 0) {
+      stop('Your input data for smoking intensity should be greater than 0')
+    }
+
+    if (duration_smoking < 0) {
+      stop('Your input data for duration of smoking should be greater than 0')
+    }
+
+    if (smoking_quit_time < 0) {
+      stop('Your input data for smoking quit time should be greater than 0')
+    }
 
 
     if (race == 'White' |
