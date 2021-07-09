@@ -36,10 +36,40 @@ plcom2012 <-
            duration_smoking,
            smoking_quit_time) {
 
+    if (typeof(age) != 'double') {
+      stop('Your input data for age should be a number.')
+    }
+    if (age <= 0 | age > 100) {
+      stop('Your input data for age should be greater than 0 and less than 100.')
+    }
+
     %notin% <- Negate(%in%)
     if (race %notin% c('White', 'American Indian', 'Alaskan Native', 'Black', 'Hispanic', 'Asian', 'Native Hawaiian', 'Pacific Islander')) {
-      stop('Your input data for race should be coming from White, American Indian, Alaskan Native, Black, Hispanic, Asian, Native Hawaiian, Pacific Islander.')
+      stop('Your input data for race should come from White, American Indian, Alaskan Native, Black, Hispanic, Asian, Native Hawaiian, Pacific Islander.')
     }
+
+    if (education %notin% c(1, 2, 3, 4, 5, 6)) {
+      stop('Your input data for education should be 1 or 2 or 3 or 4 or 5 or 6.')
+    }
+
+    if (typeof(bmi) != 'double') {
+      stop('Your input data for bmi should be a number.')
+    }
+
+    if (bmi <= 0) {
+      stop('Your input data for bmi should be a positive number.')
+    }
+
+    if (copd %notin% c(1, 0)) {
+      stop('Your input data for copd should be either 1 or 0. 1 as yes and 0 as no.')
+    }
+
+    if (cancer_hist %notin% c(1, 0)) {
+      stop('Your input data for personal history of cancer should be either 1 or 0. 1 as yes and 0 as no.')
+    }
+
+    #Eric's tests...
+
 
     if (race == 'White' |
         race == 'American Indian' | race == 'Alaskan Native') {
