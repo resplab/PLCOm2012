@@ -1,4 +1,4 @@
-
+[![R-CMD-check](https://github.com/resplab/PLCOm2012/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/resplab/PLCOm2012/actions/workflows/R-CMD-check.yaml)
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # PLCOm2012
