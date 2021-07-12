@@ -1,16 +1,16 @@
 Package: PLCOm2012
-Title: What the Package Does (One Line, Title Case)
+Title: Prediction Risk Model for Lung Cancer
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Author: Eric Yu, William Xu
+Maintainer: William Xu <yihangxu001@hotmail.com>
+Description: PLCOm2012 risk model that predict the probabilty of a patient's 6-year lung cancer incidence
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    PLCOm2012
