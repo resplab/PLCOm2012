@@ -1,4 +1,3 @@
-library(tidyverse)
 library(testthat)
 
 test_input <- function() {
