@@ -19,7 +19,9 @@
 #' @export
 #'
 #' @examples
-#'plcom2012(age=62, race='White', education=4, bmi=27, copd=0, cancer_hist=0, family_hist_lung_cancer=0, smoking_status=0, smoking_intensity=80, duration_smoking=27, smoking_quit_time=10)
+#'plcom2012(age=62, race='White', education=4, bmi=27, copd=0, cancer_hist=0,
+#'family_hist_lung_cancer=0, smoking_status=0, smoking_intensity=80,
+#'duration_smoking=27, smoking_quit_time=10)
 
 plcom2012 <- function(age, race, education, bmi, copd, cancer_hist, family_hist_lung_cancer, smoking_status, smoking_intensity, duration_smoking,
                       smoking_quit_time) {
