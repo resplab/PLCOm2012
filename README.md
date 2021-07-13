@@ -1,4 +1,5 @@
 [![R-CMD-check](https://github.com/resplab/PLCOm2012/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/resplab/PLCOm2012/actions/workflows/R-CMD-check.yaml)
+[![test-coverage](https://github.com/resplab/PLCOm2012/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/resplab/PLCOm2012/actions/workflows/test-coverage.yaml)
 [![codecov](https://codecov.io/gh/resplab/PLCOm2012/branch/main/graph/badge.svg?token=H9S9DM629T)](https://codecov.io/gh/resplab/PLCOm2012)
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
