@@ -7,7 +7,7 @@
 
 <!-- badges: end -->
 
-The goal of PLCOm2012 is to …
+The goal of PLCOm2012 is to predict 6-year probability of lung cancer in an individual person.
 
 ## Installation
 
