@@ -22,7 +22,7 @@ devtools::install_github("resplab/PLCOm2012")
 
 ## Example
 
-This is a basic example which shows the the 6-year probability of lung cancer in an individual person. The example is an individual who is 62 years old, white, had some college (level 4) education, with body-mass index 27, no chronic obstructive pulmonary disease, no personal history of cancer, no family history of lung cancer, former smoker, smokes 80 cigarettes per day, smokes for 27 years and quits smoking for 10 years. He/she would have 1.75% 6-year probability of lung cancer.
+This is a basic example which shows the the 6-year probability of lung cancer in an individual person. The example is an individual who is 62 years old, white, had some college (level 4) education, with body-mass index 27, no chronic obstructive pulmonary disease, no personal history of cancer, no family history of lung cancer, former smoker, smokes 80 cigarettes per day, smokes for 27 years and quits smoking for 10 years. He/she would have 1.75% probability of getting lung cancer over the next 6 years.
 
 ``` r
 library(PLCOm2012)
