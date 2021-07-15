@@ -25,59 +25,8 @@
 
 plcom2012 <- function(age, race, education, bmi, copd, cancer_hist, family_hist_lung_cancer, smoking_status, smoking_intensity, duration_smoking,
                       smoking_quit_time) {
-  if (typeof(age) != "double") {
-    stop("Your input data for age should be a number.")
-  }
-  if (age <= 0 | age > 100) {
-    stop("Your input data for age should be greater than 0 and less than 100.")
-  }
-
-  `%!in%` <- Negate(`%in%`)
+  
   race <- tolower(race)
-  if (race %!in% c("white", "american indian", "alaskan native", "black", "hispanic", "asian", "native hawaiian", "pacific islander")) {
-    stop("Your input data for race should come from White, American Indian, Alaskan Native, Black, Hispanic, Asian, Native Hawaiian, Pacific Islander.")
-  }
-
-  if (education %!in% c(1, 2, 3, 4, 5, 6)) {
-    stop("Your input data for education should be 1 or 2 or 3 or 4 or 5 or 6.")
-  }
-
-  if (typeof(bmi) != "double") {
-    stop("Your input data for bmi should be a number.")
-  }
-
-  if (bmi <= 0) {
-    stop("Your input data for bmi should be a positive number.")
-  }
-
-  if (copd %!in% c(1, 0)) {
-    stop("Your input data for copd should be either 1 or 0. 1 as yes and 0 as no.")
-  }
-
-  if (cancer_hist %!in% c(1, 0)) {
-    stop("Your input data for personal history of cancer should be either 1 or 0. 1 as yes and 0 as no.")
-  }
-
-  if (family_hist_lung_cancer %!in% c(1, 0)) {
-    stop("Your input data for family history of lung cancer should be either 1 or 0. 1 as yes and 0 as no.")
-  }
-
-  if (smoking_status %!in% c(1, 0)) {
-    stop("Your input data for smoking status should be either 1 or 0. 1 as current and 0 as former.")
-  }
-
-  if (smoking_intensity < 0) {
-    stop("Your input data for smoking intensity should be greater than 0")
-  }
-
-  if (duration_smoking < 0) {
-    stop("Your input data for duration of smoking should be greater than 0")
-  }
-
-  if (smoking_quit_time < 0) {
-    stop("Your input data for smoking quit time should be greater than 0")
-  }
-
 
   if (race == "white" | race == "american indian" | race == "alaskan native") {
     model <- 0.0778868 * (age - 62) - 0.0812744 * (education - 4) - 0.0274194 * (bmi - 27) + 0.3553063 * copd + 0.4589971 * cancer_hist +
