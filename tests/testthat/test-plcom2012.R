@@ -15,7 +15,7 @@ test_output <- function() {
         smoking_intensity = 10 / 0.4021541613,
         duration_smoking = 27,
         smoking_quit_time = 10
-      )
+      )$prob
       ,
       exp(-4.532506) / (1 + exp(-4.532506))
     )
@@ -32,7 +32,7 @@ test_output <- function() {
         smoking_intensity = 10 / 0.4021541613,
         duration_smoking = 27,
         smoking_quit_time = 10
-      )
+      )$prob
       ,
       exp(-4.532506 + 0.3944778) / (1 + exp(-4.532506 + 0.3944778))
     )
@@ -49,7 +49,7 @@ test_output <- function() {
         smoking_intensity = 10 / 0.4021541613,
         duration_smoking = 27,
         smoking_quit_time = 10
-      )
+      )$prob
       ,
       exp(-4.532506 - 0.7434744) / (1 + exp(-4.532506 - 0.7434744))
     )
@@ -66,7 +66,7 @@ test_output <- function() {
         smoking_intensity = 10 / 0.4021541613,
         duration_smoking = 27,
         smoking_quit_time = 10
-      )
+      )$prob
       ,
       exp(-4.532506 - 0.466585) / (1 + exp(-4.532506 - 0.466585))
     )
@@ -83,7 +83,7 @@ test_output <- function() {
         smoking_intensity = 10 / 0.4021541613,
         duration_smoking = 27,
         smoking_quit_time = 10
-      )
+      )$prob
       ,
       exp(-4.532506 + 1.027152) / (1 + exp(-4.532506 + 1.027152))
     )
