@@ -29,5 +29,6 @@ library(PLCOm2012)
 plcom2012(age=62, race='White', education=4, bmi=27, copd=0, 
           cancer_hist=0, family_hist_lung_cancer=0, smoking_status=0, 
           smoking_intensity=80, duration_smoking=27, smoking_quit_time=10)
- #> 0.01750922
+ $prob
+[1] 0.01750922
 ```
