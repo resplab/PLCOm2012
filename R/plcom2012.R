@@ -59,7 +59,8 @@ plcom2012 <- function(age, race, education, bmi, copd, cancer_hist, family_hist_
   }
 
   prob <- exp(model)/(1 + exp(model))
-  results <- prob
+  results <- list()
+  results$prob <- prob
   return(results)
-  
+    
 }
